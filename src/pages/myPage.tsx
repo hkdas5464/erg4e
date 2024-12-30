@@ -26,7 +26,7 @@ const ManageFile = () => {
   const updateFile = async () => {
     if (!newItem.trim()) return alert('Item name cannot be empty.');
 
-    const updatedData = [...data, { id: data.length + 1, name: newItem }];
+    const updatedData:any = [...data, { id: data.length + 1, name: newItem }];
     setData(updatedData); // Update state locally
     setNewItem(''); // Clear input
     setError(null);
